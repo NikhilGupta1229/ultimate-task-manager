@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  baseURL: "http://ultimate-task-manager-production.up.railway.app/api"
 });
 
 // 🔐 Attach auth headers automatically

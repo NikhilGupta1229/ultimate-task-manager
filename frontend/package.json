@@ -11,7 +11,8 @@
     "vite": "^8.0.10"
   },
   "scripts": {
-    "start": "vite"
+    "start": "vite preview",
+  "build": "vite build"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.4",
