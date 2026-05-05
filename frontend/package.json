@@ -20,4 +20,7 @@
     "postcss": "^8.5.14",
     "tailwindcss": "^4.2.4"
   }
+  "engines": {
+  "node": "18.x"
+}
 }
