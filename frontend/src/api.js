@@ -1,13 +1,14 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://ultimate-task-manager-production.up.railway.app/api"
+  baseURL: "https://ultimate-task-manager-production.up.railway.app/api"
 });
 
-// 🔐 Attach auth headers automatically
+
 API.interceptors.request.use((config) => {
   const role = localStorage.getItem("role");
   const userId = localStorage.getItem("userId");
+  
   const token = localStorage.getItem("token");
 
   if (role) config.headers.role = role;

@@ -18,7 +18,7 @@ export default function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ultimate-task-manager-production.up.railway.app/api/auth/login",
         { email, password }
       );
 

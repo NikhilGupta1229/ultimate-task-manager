@@ -17,7 +17,7 @@ export default function Register() {
 
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/api/auth/signup", {
+      await axios.post("https://ultimate-task-manager-production.up.railway.app/api/auth/signup", {
         email,
         password,
         role,
